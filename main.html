@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Aayush Kumar</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.jpg" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="style.css" rel="stylesheet">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+    <div class="container">
+      <h1><a href="main.html">Global EV Value Prediction</a></h1>
+      <h2>We ensures to serve <span>a verified and certified value</span></h2>
+      <div class="social-links">
+        <input type="text" placeholder="Write Your Name" id="inputValue">
+        <a href="#about"><button class="btn" id="btn">Get Started</button></a>
+      </div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">Predictor</a></li>
+          <li><a href="#projects">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+      <div class="section-title">
+        <h2 id="username">Welcome Aayush</h2>
+        <p>Put your values for prediction here</p>
+      </div>
+    
+      <!-- ======= Form ======= -->
+      <div class="d-flex flex-lg-column flex-md-row mb-3">
+        <div class="interests container mr-2">
+
+          <div class="section-title">
+            <h2>Your Selections</h2>
+          </div>
+  
+          <div class="row">
+            <div class="col-12 regionop">
+              <div class="icon-box">
+                <i class="ri-store-line" style="color: #ffbb2c;"></i>
+                <h3 id="regionh3">Region</h3>
+              </div>
+            </div>
+            <div class="col-12 mt-md-2 categoryop">
+              <div class="icon-box">
+                <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+                <h3 id="categoryh3">Category</h3>
+              </div>
+            </div>
+            <div class="col-12 mt-md-2 parameterop">
+              <div class="icon-box">
+                <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+                <h3 id="parameterh3">Parameter</h3>
+              </div>
+            </div>
+            <div class="col-12 mt-md-2 modeop">
+              <div class="icon-box">
+                <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+                <h3 id="modeh3">Mode</h3>
+              </div>
+            </div>
+            <div class="col-12 mt-md-2 powertrainop">
+              <div class="icon-box">
+                <i class="ri-database-2-line" style="color: #47aeff;"></i>
+                <h3 id="powertrainh3">Powertrain</h3>
+              </div>
+            </div>
+            <div class="col-12 mt-md-2 yearop">
+              <div class="icon-box">
+                <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+                <h3 id="yearh3">Year</h3>
+              </div>
+            </div>
+            <div class="col-12 mt-md-2 unitop">
+              <div class="icon-box">
+                <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+                <h3 id="unith3">Unit</h3>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <div class="form">
+          <h2>Select Options Here!!</h2>
+          <select id="region" name="region">
+            <option value="" disabled selected hidden>Select the Region</option>
+            <option value="Volvo XC90">Volvo XC90</option>
+            <option value="saab">Saab 95</option>
+            <option value="mercedes">Mercedes SLK</option>
+            <option value="audi">Audi TT</option>
+          </select>
+          <select id="category" name="category">
+            <option value="" disabled selected hidden>Select the Category</option>
+            <option value="volvo">Volvo XC90</option>
+            <option value="saab">Saab 95</option>
+            <option value="mercedes">Mercedes SLK</option>
+            <option value="audi">Audi TT</option>
+          </select>
+          <select id="parameter" name="parameter">
+            <option value="" disabled selected hidden>Select the Parameter</option>
+            <option value="volvo">Volvo XC90</option>
+            <option value="saab">Saab 95</option>
+            <option value="mercedes">Mercedes SLK</option>
+            <option value="audi">Audi TT</option>
+          </select>
+          <select id="mode" name="mode">
+            <option value="" disabled selected hidden>Select the Mode</option>
+            <option value="volvo">Volvo XC90</option>
+            <option value="saab">Saab 95</option>
+            <option value="mercedes">Mercedes SLK</option>
+            <option value="audi">Audi TT</option>
+          </select>
+          <select id="powertrain" name="powertrain">
+            <option value="" disabled selected hidden>Select the Powertrain</option>
+            <option value="volvo">Volvo XC90</option>
+            <option value="saab">Saab 95</option>
+            <option value="mercedes">Mercedes SLK</option>
+            <option value="audi">Audi TT</option>
+          </select>
+          <select id="year" name="year">
+            <option value="" disabled selected hidden>Select the Year</option>
+            <option value="volvo">Volvo XC90</option>
+            <option value="saab">Saab 95</option>
+            <option value="mercedes">Mercedes SLK</option>
+            <option value="audi">Audi TT</option>
+          </select>
+          <select id="unit" name="unit">
+            <option value="" disabled selected hidden>Select the Unit</option>
+            <option value="volvo">Volvo XC90</option>
+            <option value="saab">Saab 95</option>
+            <option value="mercedes">Mercedes SLK</option>
+            <option value="audi">Audi TT</option>
+          </select>
+          <button class="btn">Predict</button>
+        </div>
+      </div>
+      <!-- ======= Interests ======= -->
+      <div class="interests container mb-3">
+
+        <div class="section-title">
+          <h2>Model Prediction</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <i class="ri-store-line" style="color: #ffbb2c;"></i>
+              <h3>Predicted Value</h3>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-8">
+            <div class="icon-box">
+              <i class="ri-bar-chart-box-line" style="color: transparent;"></i>
+              <h3>19.48537...</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+       
+  <!-- ======= Projects Section ======= -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="testimonials container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Your designs are nice. They truly looks attractive,however not completely functioning website. I would suggest you to work over Backend part.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Sumit Dey</h3>
+            <h4>Backend Developer</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              I love the way you are presenting the components on your webpage. Your color choices are nice. Keep up with your working and keep IMPROVING.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Ayush Raj</h3>
+            <h4>ML Engineer</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Great WebPages Man!! You would be great web designer soon. I would really ask you once to work for me as well. God bless you Boy.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Shubham Jaiswal</h3>
+            <h4>Data Analyst</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              I am happy with your work. I was really lucky to get you as Frontend Developer for my E-commerce Website. Thanks for all your effort.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Bhuneshwar Prasad</h3>
+            <h4>BusinessMan</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Your things are not completely of your own, picked from previously available sources. Although you gave good touch to them by your side.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>Prabhakar Kumar</h3>
+            <h4>Manager</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="vendor/counterup/counterup.min.js"></script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/venobox/venobox.min.js"></script>
+
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/70fa5628c6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
