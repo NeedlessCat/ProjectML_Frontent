@@ -83,6 +83,14 @@
     }
   }
 
+  $(document).ready(function () {
+    $(".form").submit(function (event) {
+      event.preventDefault();
+      var selectedSection = $("#valuePred")[0];
+      selectedSection.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
   //Getting the name for prediction_page
   $(document).ready(function () {
     $("#btn").click(function () {
