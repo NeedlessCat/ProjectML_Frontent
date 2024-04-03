@@ -4,7 +4,7 @@
   // Nav Menu
   $(document).on(
     "click",
-    ".nav-menu a, .mobile-nav a, .social-links a",
+    ".nav-menu a, .mobile-nav a, .social-links a, .form button",
     function (e) {
       if (
         location.pathname.replace(/^\//, "") ==
@@ -83,13 +83,13 @@
     }
   }
 
-  $(document).ready(function () {
-    $(".form").submit(function (event) {
-      event.preventDefault();
-      var selectedSection = $("#valuePred")[0];
-      selectedSection.scrollIntoView({ behavior: "smooth" });
-    });
-  });
+  // $(document).ready(function () {
+  //   $(".form").submit(function (event) {
+  //     event.preventDefault();
+  //     var selectedSection = $("#valuePred")[0];
+  //     selectedSection.scrollIntoView({ behavior: "smooth" });
+  //   });
+  // });
 
   //Getting the name for prediction_page
   $(document).ready(function () {

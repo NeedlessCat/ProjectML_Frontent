@@ -65,7 +65,7 @@
           <div class="row">
             <div class="col-12 regionop">
               <div class="icon-box">
-                <img src="./img/region/australia.png" id="regionimg" class="mr-2" style="width:35px; " alt="aus">
+                <img src="./img/region/Australia.png" id="regionimg" class="mr-2" style="width:35px; " alt="aus">
                 <h3 id="regionh3">Region</h3>
               </div>
             </div>
@@ -108,7 +108,7 @@
           </div>
   
         </div>
-        <form class="form">
+        <form class="form" id="form">
           <h2>Select Options Here!!</h2>
           <select id="region" name="region">
             <option value="" disabled selected hidden>Select the Region</option>
@@ -226,7 +226,7 @@
           <div class="col-lg-9 col-md-8">
             <div class="icon-box">
               <i class="ri-bar-chart-box-line" style="color: transparent;"></i>
-              <h3>19.48537...</h3>
+              <h3 id="valuepred">19.48537...</h3>
             </div>
           </div>
         </div>
@@ -306,6 +306,26 @@
       </div>
     </div>
   </section>
+
+  <!-- Submission page -->
+  <script>
+    document.getElementById("form").addEventListener("submit",function(event) {
+      event.preventDefault();
+      var formData = new FormData(this);
+
+      fetch('/submit', {
+        method:'POST',
+        body:formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("valuepred").innerText = JSON.stringify(data);
+      })
+      .catch(error => {
+        console.error('Error',error)
+      });
+    });
+  </script>
   
   <!-- Vendor JS Files -->
   <script src="vendor/jquery/jquery.min.js"></script>
