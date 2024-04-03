@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Aayush Kumar</title>
+  <title>EV Predictor</title>
 
   <!-- Favicons -->
   <link href="img/favicon.jpg" rel="icon">
@@ -21,9 +21,6 @@
 
   <!-- Template Main CSS File -->
   <link href="style.css" rel="stylesheet">
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-  </script>
 </head>
 
 <body>
@@ -68,25 +65,25 @@
           <div class="row">
             <div class="col-12 regionop">
               <div class="icon-box">
-                <i class="ri-store-line" style="color: #ffbb2c;"></i>
+                <img src="./img/region/australia.png" id="regionimg" class="mr-2" style="width:35px; " alt="aus">
                 <h3 id="regionh3">Region</h3>
               </div>
             </div>
             <div class="col-12 mt-md-2 categoryop">
               <div class="icon-box">
-                <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+                <img src="./img/category/historical.png" id="categoryimg" class="mr-2" style="width:35px; " alt="aus">
                 <h3 id="categoryh3">Category</h3>
               </div>
             </div>
             <div class="col-12 mt-md-2 parameterop">
               <div class="icon-box">
-                <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+                <img src="./img/parameter/electricitydemand.png" id="parameterimg" class="mr-2" style="width:35px; " alt="aus">
                 <h3 id="parameterh3">Parameter</h3>
               </div>
             </div>
             <div class="col-12 mt-md-2 modeop">
               <div class="icon-box">
-                <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+                <img src="./img/mode/buses.png" id="modeimg" class="mr-2" style="width:35px; " alt="aus">
                 <h3 id="modeh3">Mode</h3>
               </div>
             </div>
@@ -104,7 +101,7 @@
             </div>
             <div class="col-12 mt-md-2 unitop">
               <div class="icon-box">
-                <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+                <img src="./img/unit/charger.png" id="unitimg" class="mr-2" style="width:35px; " alt="aus">
                 <h3 id="unith3">Unit</h3>
               </div>
             </div>
@@ -115,52 +112,99 @@
           <h2>Select Options Here!!</h2>
           <select id="region" name="region">
             <option value="" disabled selected hidden>Select the Region</option>
-            <option value="Volvo XC90">Volvo XC90</option>
-            <option value="saab">Saab 95</option>
-            <option value="mercedes">Mercedes SLK</option>
-            <option value="audi">Audi TT</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Canada">Canada</option>
+            <option value="Chile">Chile</option>
+            <option value="China">China</option>
+            <option value="Denmark">Denmark</option>
+            <option value="EU27">EU27</option>
+            <option value="Europe">Europe</option>
+            <option value="Finland">Finland</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Greece">Greece</option>
+            <option value="Iceland">Iceland</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Israel">Israel</option>
+            <option value="Italy">Italy</option>
+            <option value="Japan">Japan</option>
+            <option value="Korea">Korea</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Norway">Norway</option>
+            <option value="Other Europe">Other Europe</option>
+            <option value="Poland">Poland</option>
+            <option value="Rest of the world">Rest of the world</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Spain">Spain</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Turkey">Turkey</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="USA">USA</option>
+            <option value="World">World</option>
           </select>
           <select id="category" name="category">
             <option value="" disabled selected hidden>Select the Category</option>
-            <option value="volvo">Volvo XC90</option>
-            <option value="saab">Saab 95</option>
-            <option value="mercedes">Mercedes SLK</option>
-            <option value="audi">Audi TT</option>
+            <option value="Historical">Historial</option>
+            <option value="Projection-APS">Projection-APS</option>
+            <option value="Projection-STEPS">Projection-STEPS</option>
           </select>
           <select id="parameter" name="parameter">
             <option value="" disabled selected hidden>Select the Parameter</option>
-            <option value="volvo">Volvo XC90</option>
-            <option value="saab">Saab 95</option>
-            <option value="mercedes">Mercedes SLK</option>
-            <option value="audi">Audi TT</option>
+            <option value="EV stock">EV stock</option>
+            <option value="EV sales share">EV sales share</option>
+            <option value="EV stock share">EV stock share</option>
+            <option value="EV sales">EV sales</option>
           </select>
           <select id="mode" name="mode">
             <option value="" disabled selected hidden>Select the Mode</option>
-            <option value="volvo">Volvo XC90</option>
-            <option value="saab">Saab 95</option>
-            <option value="mercedes">Mercedes SLK</option>
-            <option value="audi">Audi TT</option>
+            <option value="Buses">Buses</option>
+            <option value="Cars">Cars</option>
+            <option value="EV">EV</option>
+            <option value="Trucks">Trucks</option>
+            <option value="Vans">Vans</option>
           </select>
           <select id="powertrain" name="powertrain">
             <option value="" disabled selected hidden>Select the Powertrain</option>
-            <option value="volvo">Volvo XC90</option>
-            <option value="saab">Saab 95</option>
-            <option value="mercedes">Mercedes SLK</option>
-            <option value="audi">Audi TT</option>
+            <option value="BEV">BEV</option>
+            <option value="EV">EV</option>
+            <option value="PHEV">PHEV</option>
+            <option value="Publicly available fast">Publicly available fast</option>
           </select>
           <select id="year" name="year">
             <option value="" disabled selected hidden>Select the Year</option>
-            <option value="volvo">Volvo XC90</option>
-            <option value="saab">Saab 95</option>
-            <option value="mercedes">Mercedes SLK</option>
-            <option value="audi">Audi TT</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2025">2025</option>
+            <option value="2030">2030</option>
           </select>
           <select id="unit" name="unit">
             <option value="" disabled selected hidden>Select the Unit</option>
-            <option value="volvo">Volvo XC90</option>
-            <option value="saab">Saab 95</option>
-            <option value="mercedes">Mercedes SLK</option>
-            <option value="audi">Audi TT</option>
+            <option value="Vehicles">Vehicles</option>
+            <option value="percent">Percent</option>
+            <option value="charging points">Charging Points</option>
+            <option value="GWh">GWh</option>
+            <option value="Milion barrels per day">Milion Barrels Per Day</option>
+            <option value="Oil displacement">Oil Displacement</option>
+            <option value="million lge">Million LGE</option>
           </select>
           <button class="btn" type="submit">Predict</button>
         </form>

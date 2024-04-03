@@ -102,6 +102,10 @@
       i++;
       $(`.${fieldName}op`).removeClass(`${fieldName}op`);
       // Display the selected value
+      $(`#${fieldName}img`).attr(
+        "src",
+        `./img/${fieldName}/${selectedValue}.png`
+      );
       $(`#${fieldName}h3`).html(`${modifiedText}: ${selectedValue}`);
     });
   });
